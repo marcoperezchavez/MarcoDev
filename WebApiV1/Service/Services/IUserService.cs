@@ -10,8 +10,9 @@ namespace Service.Services
     public interface IUserService
     {    
         List<data> GetUsers();
-        data GetUser(int id);
+        data GetUser(int id); 
 
-
+        bool SaveUser(data user);
+        bool UpdateUser(int id, data user);
     }
 }
