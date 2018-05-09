@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid Name="GridUsers"  HorizontalAlignment="Left" Height="255" Margin="102,25,0,0" VerticalAlignment="Top" Width="618"/>
+        <Button Name="ButtonGetUsers" Content="Button" HorizontalAlignment="Left" Margin="527,308,0,0" VerticalAlignment="Top" Width="155" Height="62"/>
+
     </Grid>
 </Window>

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UserService.Services;
+using UserService = UserService.Services.UserServices;
 
 namespace WpfAppWithWebApi
 {
@@ -20,9 +22,15 @@ namespace WpfAppWithWebApi
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        IUserServices _userService = new UserServices();
         public MainWindow()
         {
+
+            _userService.GetUsers();
+
             InitializeComponent();
         }
+ 
     }
 }

@@ -93,5 +93,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Layer.data\Layer.data.csproj">
+      <Project>{7b6bf09a-1959-41cd-b991-36a77ba68c33}</Project>
+      <Name>Layer.data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserService\UserService.csproj">
+      <Project>{065da04f-fb84-41af-ae5c-475971d2eb3a}</Project>
+      <Name>UserService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
